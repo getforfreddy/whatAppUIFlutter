@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:studying/whatsappUI/view/statusListView.dart';
 import 'call_screen.dart';
 import 'contact_list_screen.dart';
-import 'image_screen.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -41,7 +41,7 @@ class _MainScreenState extends State<MainScreen> with SingleTickerProviderStateM
         controller: _tabController,
         children: [
           ContactListScreen(),  // Display ContactListScreen in the Chat tab
-          ImageScreen(),        // Display ImageScreen in the Image tab
+          StatusListView(),        // Display ImageScreen in the Image tab
           CallScreen(),         // Display CallScreen in the Call tab
         ],
       ),
