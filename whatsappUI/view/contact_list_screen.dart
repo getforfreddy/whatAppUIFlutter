@@ -30,7 +30,7 @@ class ContactListScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => WhatsAppUI(contact: contacts[index]),
+                    builder: (context) => WhatsAppUI(contact: contacts[index],),
                   ),
                 );
               },
